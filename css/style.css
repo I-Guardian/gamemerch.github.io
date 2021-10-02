@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebe7f3;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 20px 0;
+    background-color: #B398ED;
+}
+
+#site_title {
+    text-decoration: none;
+    color: black;
+}
+
+.inline_menu > li {
+    list-style: none;
+    float: left;
+    margin-left: 80px;
+}
+
+.inline_menu > li > a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#wrapper_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1260px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 595px;
+    padding: 40px 0 40px 0;
+}
+
+.wrapper > .container {
+    width: 100%;
+    max-width: 1260px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#prints_list {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr );
+    gap: 40px 0;
+    width: 100%;
+}
+
+#prints_list > .item {
+    width: 204px;
+    height: 204px;
+    border: solid 1px #000;
+    border-radius: 10px;
+    margin: 0 auto;
+    transition: transform .5s ease-in-out;
+    cursor: pointer;
+}
+
+
+#prints_list > .item:hover {
+    transform: rotate(10deg);
+}
+
+#prints_list > .item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.title_wrapper {
+    text-align: center;
+    padding: 0 0 40px 0;
+}
+
+
+footer {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    background-color: #B398ED;
+}
